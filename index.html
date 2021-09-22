@@ -29,6 +29,7 @@
 
     <!-- Modernizer for Portfolio -->
     <script src="js/modernizer.js"></script>
+   
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -131,8 +132,84 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div><br><br>
+    <div class="section-title text-center">
+        <h3>Our Services</h3>
+        <p class="lead">From Sustained Innovation to Disruptive Transformation,<br> VelocitAI Digital was founded to radically change the way clients experience service delivery.</p>
+    </div>
+    <div class="carousel">
+        <figure>
+          <img src="uploads/rotater.jpg" alt="">
+          <img src="uploads/rotater.jpg" alt="">
+          <img src="uploads/rotater.jpg" alt="">
+          <img src="uploads/rotater.jpg" alt="">
+          <img src="uploads/rotater.jpg" alt="">
+          <img src="uploads/rotater.jpg" alt="">
+          <img src="uploads/rotater.jpg" alt="">
+          <img src="uploads/rotater.jpg" alt="">
+        </figure>
+        <nav>
+          <button class="nav prev">Prev</button>
+          <button class="nav next">Next</button>
+        </nav>
+      </div>
+      <script>var
+        carousel = document.querySelector('.carousel'),
+        figure = carousel.querySelector('figure'),
+        nav = carousel.querySelector('nav'),
+        numImages = figure.childElementCount,
+        theta =  2 * Math.PI / numImages,
+        currImage = 0
+      ;
+        
+      nav.addEventListener('click', onClick, true);
+      
+      function onClick(e) {
+        e.stopPropagation();
+        
+        var t = e.target;
+        if (t.tagName.toUpperCase() != 'BUTTON')
+          return;
+        
+        if (t.classList.contains('next')) {
+          currImage++;
+        }
+        else {
+          currImage--;
+        }
+        
+        figure.style.transform = `rotateY(${currImage * -theta}rad)`;
+      }</script>
 
+<div class="parallax section parallax-off" data-stellar-background-ratio="0.9" style="background-image:url('uploads/parallax_04.jpg');">
+    <div class="container">
+        <div class="row text-center stat-wrap">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <span data-scroll class="global-radius icon_wrap effect-1"><i class="flaticon-briefcase"></i></span>
+                <p class="stat_count">1200</p>
+                <h3>Complated Projects</h3>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <span data-scroll class="global-radius icon_wrap effect-1"><i class="flaticon-happy"></i></span>
+                <p class="stat_count">3210</p>
+                <h3>Happy Clients</h3>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <span data-scroll class="global-radius icon_wrap effect-1"><i class="flaticon-idea"></i></span>
+                <p class="stat_count">3781</p>
+                <h3>Customer Services</h3>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <span data-scroll class="global-radius icon_wrap effect-1"><i class="flaticon-customer-service"></i></span>
+                <p class="stat_count">4300</p>
+                <h3>Answered Questions</h3>
+            </div>
+        </div>
+    </div>
+</div>-->
     <!-- <div id="about" class="section wb"> 
         <div class="container">
             <div class="row">
@@ -270,12 +347,93 @@
 
             <hr class="hr1">
 
-            <div class="text-center">
+           <!--<div class="text-center">
                 <a data-scroll href="#portfolio" class="btn btn-light btn-radius btn-brd">View Our Portfolio</a>
-            </div>
+            </div> -->
         </div><!-- end container -->
     </div><!-- end section -->
-<!--
+
+    <div id="about" class="section wb">
+        <div class="container">
+			<div class="section-title text-center">
+                <h3>Our Products</h3>
+                <p class="lead">Our research labs relentlessly pursue innovative technology solutions by using bleeding edge technologies <br>like Computer Vision, Augmented Reality, Artificial Intelligence, Machine Learning, & Data Sciences.</p>
+            </div><!-- end title -->
+			
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="pricingTable">
+                        <div class="pricingTable-header">
+                            <h3 class="title">Artificial Intelligence and Machine Learning</h3>
+                           
+                        </div>
+                        <div class="price-value">
+                            <div class="value">
+                                <span class="currency"><img src="images/logos/picon.png"></span>
+                                
+                            </div>
+                        </div>
+                        <ul class="pricing-content">
+                            <li> Automates analytical model building</li>
+                            <li>Automates analytical model building</li>
+                            <li>Automates analytical model building</li>
+                            <li class="disable">Automates analytical model building</li>
+                            <li class="disable">Automates analytical model building</li>
+                        </ul>
+                        <a href="#" class="pricingTable-signup">Read More </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="pricingTable purple">
+                        <div class="pricingTable-header">
+                            <h3 class="title">Computer Vision and Augumented Reality</h3>
+                            
+                            
+                        </div>
+                        <div class="price-value">
+                            <div class="value">
+                                <span class="currency"><img src="images/logos/picon.png"></span>
+                                
+                            </div>
+                        </div>
+                        <ul class="pricing-content">
+                            <li>Automates analytical model building</li>
+                            <li>Automates analytical model building</li>
+                            <li>Automates analytical model building</li>
+                            <li>Automates analytical model building</li>
+                            <li class="disable">Automates analytical model building</li>
+                        </ul>
+                        <a href="#" class="pricingTable-signup">Read More</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="pricingTable blue">
+                        <div class="pricingTable-header">
+                            <h3 class="title">SaaS Products for Retail eCommerce </h3><br>
+                            
+                        </div>
+                        <div class="price-value">
+                            <div class="value">
+                                <span class="currency"><img src="images/logos/picon.png"></span>
+                            </div>
+                        </div>
+                        <ul class="pricing-content">
+                            <li>Automates analytical model building</li>
+                            <li>Automates analytical model building</li>
+                            <li>Automates analytical model building</li>
+                            <li>Automates analytical model building</li>
+                            <li>Automates analytical model building</li>
+                        </ul>
+                        <a href="#" class="pricingTable-signup">Read More</a>
+                    </div>
+                </div>
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    <!--
     <div class="parallax section noover" data-stellar-background-ratio="0.7" style="background-image:url('uploads/parallax_05.png');">
         <div class="container">
             <div class="row text-center">
@@ -493,7 +651,7 @@
             </div>
 
         </div>
-    </div>
+    </div>-->
 
     <footer class="footer">
         <div class="container">
@@ -501,26 +659,29 @@
                 <div class="col-md-4 col-sm-4 col-xs-12">
                     <div class="widget clearfix">
                         <div class="widget-title">
-                            <img src="images/logos/logo-2.png" alt="" />
+                            <img src="images/logos/logo11.png" alt="" /><br><br>
+                            <img src="images/logos/logo44.png" alt="" /><br><br>
+                            <img src="images/logos/logo22.png" alt="" /><br><br>
+                            <img src="images/logos/logo33.png" alt="" />
                         </div>
-                        <p> Integer rutrum ligula eu dignissim laoreet. Pellentesque venenatis nibh sed tellus faucibus bibendum. Sed fermentum est vitae rhoncus molestie. Cum sociis natoque penatibus et magnis dis montes.</p>
-                        <p>Sed fermentum est vitae rhoncus molestie. Cum sociis natoque penatibus et magnis dis montes.</p>
+                        
                     </div>
                 </div>
 
 				<div class="col-md-4 col-sm-4 col-xs-12">
                     <div class="widget clearfix">
                         <div class="widget-title">
-                            <h3>Pages</h3>
+                            <h3>Quick Links</h3>
                         </div>
 
                         <ul class="footer-links hov">
                             <li><a href="#">Home <span class="icon icon-arrow-right2"></span></a></li>
-							<li><a href="#">Blog <span class="icon icon-arrow-right2"></span></a></li>
-							<li><a href="#">Pricing <span class="icon icon-arrow-right2"></span></a></li>
-							<li><a href="#">About <span class="icon icon-arrow-right2"></span></a></li>
-							<li><a href="#">Faq <span class="icon icon-arrow-right2"></span></a></li>
-							<li><a href="#">Contact <span class="icon icon-arrow-right2"></span></a></li>
+							<li><a href="#">Our Services <span class="icon icon-arrow-right2"></span></a></li>
+							<li><a href="#">Industries <span class="icon icon-arrow-right2"></span></a></li>
+							<li><a href="#">About Us <span class="icon icon-arrow-right2"></span></a></li>
+							<li><a href="#">Product <span class="icon icon-arrow-right2"></span></a></li>
+							<li><a href="#">Careers <span class="icon icon-arrow-right2"></span></a></li>
+                            <li><a href="#">Blog <span class="icon icon-arrow-right2"></span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -548,14 +709,14 @@
         <div class="container">
             <div class="footer-distributed">
                 <div class="footer-left">                   
-                    <p class="footer-company-name">All Rights Reserved. &copy; 2018 <a href="#">GoodWEB</a> Design By : 
-					<a href="https://html.design/">html design</a></p>
+                    <p class="footer-company-name">Copyright &copy;  <a href="#">Velocitai Digital Private Limited</a>
+					</p>
                 </div>
 
                 
             </div>
         </div>
-    </div>-->
+    </div>
 
     <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
 
