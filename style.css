@@ -48,7 +48,7 @@
 -------------------------------------------------------------------*/
 
 body {
-    color: #999;
+    color: rgb(0, 0, 0);
     font-size: 15px;
     font-family: 'Raleway', sans-serif;
     line-height: 1.80857;
@@ -741,7 +741,10 @@ li.social-links a {
 
 
 .section.lb {
-    background-color: #f2f3f5;
+    background-color: #eeeeee;
+}
+.section.lb1 {
+    background-color: #ffffff;
 }
 
 .section.db {
@@ -795,7 +798,7 @@ li.social-links a {
 
 
 .section-title p {
-    color: #999;
+    color: rgb(0, 0, 0);
     font-weight: 400;
     font-size: 18px;
     line-height: 33px;
@@ -1307,7 +1310,7 @@ li.social-links a {
 
 .service-widget h3 {
     font-size: 22px;
-    color: #ffffff;
+    color: #000000;
     padding: 20px 0 12px;
     margin: 0;
 	font-weight: 600;
@@ -1352,7 +1355,7 @@ li.social-links a {
     padding-top: 10px;
     font-size: 19px;
     
-    color: #999;
+    color: rgb(0, 0, 0);
     padding-bottom: 0;
 }
 
@@ -3727,11 +3730,7 @@ p.lead-text{
 
   @import url('https://fonts.googleapis.com/css?family=Roboto:300');
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Roboto', sans-serif;
-}
+
 
 section {
   width: 100%;
@@ -3769,7 +3768,28 @@ section {
     background-color: white;
     color: black;
 }
-
+@media only screen and (max-width: 968px) {
+    .card_red, .card_red .title .fa {
+        background-color: white;
+        color: black;
+        margin-left: -15%;
+       
+      }
+      .card_violet, .card_violet .title .fa  {
+          background-color: white;
+          color: black;
+          margin-left: -15%;
+         
+      }
+      .card_three, .card_three .title .fa  {
+          background-color: white;
+          color: black;
+          margin-left: -15%;
+         
+      }
+   
+  }
+ 
 
 .card:before {
   content: '';
